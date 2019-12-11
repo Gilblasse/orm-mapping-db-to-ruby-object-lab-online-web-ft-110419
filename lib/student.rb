@@ -13,6 +13,8 @@ class Student
       SELECT * FROM students
     SQL
     
+    students = DB[:conn].execute(sql).map {|row| self.new_from_db(row) }
+    students
     # remember each row should be a new instance of the Student class
   end
   
