@@ -22,6 +22,7 @@ class Student
   end
   
   def self.students_below_12th_grade
+    binding.pry
     self.all.select {|student| student.grade == "12" }
   end
 
