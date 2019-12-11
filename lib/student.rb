@@ -2,8 +2,6 @@ class Student
   attr_accessor :id, :name, :grade
 
   def self.new_from_db(row)
-    binding.pry
-    # create a new Student object given a row from the database
     student = self.new
     student.id,student.name,student.grade = row 
     student
