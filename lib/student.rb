@@ -30,7 +30,7 @@ class Student
   end
   
   def self.first_student_in_grade_10
-    self.all.select {|student| student.grade.to_i ==  10 }.first
+    self.all.find {|student| student.grade.to_i ==  10 }
   end
 
   def self.find_by_name(name)
