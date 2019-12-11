@@ -32,6 +32,8 @@ class Student
   def self.first_student_in_grade_10
     self.all.find {|student| student.grade.to_i ==  10 }
   end
+  
+  def 
 
   def self.find_by_name(name)
     sql = <<-SQL
