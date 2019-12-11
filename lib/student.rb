@@ -34,7 +34,7 @@ class Student
   end
   
   def self.all_students_in_grade_X(num)
-    
+     self.all.select {|student| student.grade.to_i ==  num }
   end
 
   def self.find_by_name(name)
