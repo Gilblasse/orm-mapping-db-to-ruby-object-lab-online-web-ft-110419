@@ -5,7 +5,7 @@ class Student
     binding.pry
     # create a new Student object given a row from the database
     @id,@name,@grade = row 
-    student = Student.new(name,grade,id)
+    student = Student.new
     student
   end
 
