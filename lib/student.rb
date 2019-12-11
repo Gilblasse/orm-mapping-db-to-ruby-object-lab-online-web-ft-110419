@@ -12,6 +12,7 @@ class Student
     sql =  <<-SQL
       SELECT * FROM students
     SQL
+    
     # remember each row should be a new instance of the Student class
   end
   
