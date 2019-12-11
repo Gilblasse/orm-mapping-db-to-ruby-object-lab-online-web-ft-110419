@@ -28,6 +28,8 @@ class Student
   def self.first_X_students_in_grade_10(num)
      self.all.select {|student| student.grade.to_i ==  10 }[0...num]
   end
+  
+  def 
 
   def self.find_by_name(name)
     sql = <<-SQL
