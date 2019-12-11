@@ -26,7 +26,7 @@ class Student
   end
   
   def self.first_X_students_in_grade_10(num)
-     binding.pry
+     self.all.select {|student| student.grade.to_i ==  10 }[0..1]
   end
 
   def self.find_by_name(name)
