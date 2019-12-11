@@ -15,7 +15,6 @@ class Student
     
     students = DB[:conn].execute(sql).map {|row| self.new_from_db(row) }
     students
-    # remember each row should be a new instance of the Student class
   end
   
   def self.all_students_in_grade_9
