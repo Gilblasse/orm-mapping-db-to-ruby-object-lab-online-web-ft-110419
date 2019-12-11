@@ -22,8 +22,7 @@ class Student
   end
   
   def self.students_below_12th_grade
-    binding.pry
-    self.all.select {|student| student.grade == "12" }
+    self.all.select {|student| student.grade.to_i <  12 }
   end
 
   def self.find_by_name(name)
