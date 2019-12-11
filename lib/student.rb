@@ -1,11 +1,5 @@
 class Student
   attr_accessor :id, :name, :grade
-  
-  def initialize(name,grade)
-    @id ||= nil
-    @name = name
-    @grade = grade
-  end
 
   def self.new_from_db(row)
     binding.pry
