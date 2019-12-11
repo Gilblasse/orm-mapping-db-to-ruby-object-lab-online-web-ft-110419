@@ -4,8 +4,8 @@ class Student
   def self.new_from_db(row)
     binding.pry
     # create a new Student object given a row from the database
+     student = self.new
     @id,@name,@grade = row 
-    student = self.new
     student
   end
 
